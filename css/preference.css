@@ -1,0 +1,128 @@
+/* ========================================================================================================================================================================
+   ---------------------------------СЕКЦИЯ "PREFERENCE"------------------------------------------------------------------------------------------------------------------------------
+   ======================================================================================================================================================================== */
+.sct-preference {
+  padding-top: 59px;
+  height: 1064px;
+}
+
+.sct-preference__container {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sct-preference__wheel__wheel-inner__content__svg {
+  margin-bottom: 16px;
+}
+
+.sct-preference__wheel__wheel-inner__content__heading {
+  margin-bottom: 6px;
+}
+
+.sct-preference__wheel__wheel-inner__content__desc {
+  text-align: center;
+}
+
+.sct-preference__wheel:nth-child(1) .sct-preference__wheel__wheel-inner__content__desc {
+  max-width: 255px;
+}
+
+.sct-preference__wheel:nth-child(2) .sct-preference__wheel__wheel-inner__content__desc {
+  max-width: 250px;
+}
+
+.sct-preference__wheel:nth-child(3) .sct-preference__wheel__wheel-inner__content__desc {
+  max-width: 315px;
+}
+
+.sct-preference__wheel:nth-child(4) .sct-preference__wheel__wheel-inner__content__desc {
+  max-width: 230px;
+}
+
+.sct-preference__wheel:nth-child(5) .sct-preference__wheel__wheel-inner__content__desc {
+  max-width: 260px;
+}
+
+
+
+.sct-preference__wheel__wheel-inner {
+  position: absolute;
+  left: 50%;
+  transform-origin: 0% 100%;
+  padding-bottom: 290px;
+
+  animation: main-rotate 16s linear infinite;
+}
+
+.sct-preference__wheel__wheel-inner__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  animation: content-rotate 16s linear infinite;
+}
+
+
+@keyframes main-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes content-rotate  {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.sct-preference__wheel:nth-child(2) .sct-preference__wheel__wheel-inner {
+  transform: rotate(72deg);
+  animation-delay: 3.6s;
+}
+
+.sct-preference__wheel:nth-child(2) .sct-preference__wheel__wheel-inner__content {
+  transform: rotate(-72deg);
+  animation-delay: 3.6s;
+}
+
+.sct-preference__wheel:nth-child(3) .sct-preference__wheel__wheel-inner {
+  transform: rotate(144deg);
+  animation-delay: 6.4s;
+}
+
+.sct-preference__wheel:nth-child(3) .sct-preference__wheel__wheel-inner__content {
+  transform: rotate(-144deg);
+  animation-delay: 6.4s;
+}
+
+.sct-preference__wheel:nth-child(4) .sct-preference__wheel__wheel-inner {
+  transform: rotate(216deg);
+  animation-delay: 9.6s;
+}
+
+.sct-preference__wheel:nth-child(4) .sct-preference__wheel__wheel-inner__content {
+  transform: rotate(-216deg);
+  animation-delay: 9.6s;
+}
+
+.sct-preference__wheel:nth-child(5) .sct-preference__wheel__wheel-inner {
+  transform: rotate(360deg);
+  animation-delay: 12.8s;
+}
+
+.sct-preference__wheel:nth-child(5) .sct-preference__wheel__wheel-inner__content {
+  transform: rotate(-360deg);
+  animation-delay: 12.8s;
+}
