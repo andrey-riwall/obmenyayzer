@@ -18,7 +18,7 @@
 .sct-preference__heading {
   position: absolute;
   top: 345px;
-  left: 27%;
+  left: 26%;
 
   font-size: 35px;
 
@@ -63,7 +63,7 @@
   position: absolute;
   left: 50%;
   transform-origin: 0% 100%;
-  padding-bottom: 310px;
+  padding-bottom: 410px;
 
   animation: main-rotate 16s linear infinite;
 }
