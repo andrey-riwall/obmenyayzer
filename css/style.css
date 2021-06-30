@@ -52,8 +52,199 @@ h1, h2, h3, h4, h5, h6, p, span, strong {
 
 
 /* ========================================================================================================================================================================
+   ---------------------------------BACKGROUND------------------------------------------------------------------------------------------------------------------------------
+   ======================================================================================================================================================================== */
+.bg {
+  background: url('../img/bg/bg1.png') no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+
+/* ========================================================================================================================================================================
+   ---------------------------------ID TRIGGER------------------------------------------------------------------------------------------------------------------------------
+   ======================================================================================================================================================================== */
+.id-trigger {
+  overflow: hidden;
+}
+
+#steps {
+  position: absolute;
+  top: 28.9%;
+}
+
+#storage {
+  position: absolute;
+  top: 46.51%;
+}
+
+#faq {
+  position: absolute;
+  top: 94%;
+}
+
+
+/* ========================================================================================================================================================================
    -----------------------------------UI KIT-------------------------------------------------------------------------------------------------------------------------------
    ======================================================================================================================================================================== */
+/* NAV */
+.nav {
+  position: relative;
+  transition: border .5s ease;
+}
+
+.header__nav__list__item__link::after {
+  content: '';
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background: #000;
+
+  transform: translateY(1350%);
+
+  transition: transform .25s ease;
+}
+
+.header__nav__list__item__link:hover::after,
+.header__nav__list__item__link:focus::after {
+  transform: translateY(1220%);
+}
+
+
+/* RED BTN */
+.btn_red {
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #F22828;
+  transition: color .2s linear;
+}
+
+.btn_red:hover,
+.btn_red:focus {
+  color: #000;
+  border: 3px solid #F22828;
+}
+
+.qweqwe {
+  z-index: 1000;
+}
+
+.btn_red::after  {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  width: 240px;
+  height: 70px;
+  background: #f22828;
+  transform: translateY(0%);
+  transition: transform .2s linear;
+}
+
+.btn_red:hover::after  {
+  transform: translateY(-101%);
+}
+
+.btn_red:active {
+  border: 3px solid #F66868;
+  color: rgba(0, 0, 0, .7);
+}
+
+.btn_red_hover:hover, .btn_red_hover:active {
+  color: #fff;
+}
+
+.btn_red_hover {
+  color: #fff;
+}
+
+
+/* BORDER BTN */
+.btn_border {
+  position: relative;
+  overflow: hidden;
+  transition: color .2s linear;
+}
+
+.btn_border::after {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  width: 500px;
+  height: 70px;
+  background: #fff;
+  transform: translateY(101%);
+  transition: transform .2s linear;
+}
+
+.btn_border:hover::after {
+  transform: translateY(0%);
+}
+
+.btn_border:hover {
+  color: #000;
+}
+
+
+/* swiper */
+.swiper-button-prev,
+.swiper-button-next {
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  transform: scale(1.35);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, .9);
+}
+
+.swiper-button-next::before, .swiper-container-rtl .swiper-button-prev::before,
+.swiper-button-prev::before, .swiper-container-rtl .swiper-button-next::before {
+  transition: border .2s ease;
+}
+
+.swiper-button-prev:hover::before, .swiper-container-rtl .swiper-button-next::before,
+.swiper-button-next:hover::before, .swiper-container-rtl .swiper-button-prev::before {
+  border-bottom: 2px solid #9E9DFF;
+  border-right: 2px solid #9E9DFF;
+}
+
+
+/* accordion */
+#accordion h3::before {
+  transition: background .3s ease;
+}
+
+#accordion h3:hover::before {
+  background: #000;
+}
+
+
+/* soc */
+.footer-link {
+  transition: color .2s ease;
+}
+
+.footer-link a svg path {
+  transition: fill .2s ease;
+}
+
+.footer-link:hover {
+  color: #BEBEBE;
+}
+
+.footer-link:hover a svg path {
+  fill: #BEBEBE;
+}
+
+
+
+
+
+
+
 
 
 
@@ -81,7 +272,7 @@ h1, h2, h3, h4, h5, h6, p, span, strong {
 }
 
 .btn_red {
-  background: #F22828;
+  background: transparent;
 }
 
 .btn_border {
@@ -93,6 +284,8 @@ h1, h2, h3, h4, h5, h6, p, span, strong {
   font-size: 40px;
   line-height: 64px;
   color: #0C0C0C;
+
+  text-align: center;
 }
 
 .desc {
@@ -123,7 +316,7 @@ h1, h2, h3, h4, h5, h6, p, span, strong {
 }
 
 .header__nav {
-  height: 80px;
+  height: 88px;
 }
 
 .header__nav__list {
@@ -292,3 +485,203 @@ h1, h2, h3, h4, h5, h6, p, span, strong {
   max-width: 421px;
   max-height: 56px;
 }
+
+
+/* ========================================================================================================================================================================
+   ---------------------------------СЕКЦИЯ "FAQ"------------------------------------------------------------------------------------------------------------------------------
+   ======================================================================================================================================================================== */
+.sct-faq {
+  background: url('../img/bg/bg2.png') no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.sct-faq__heading {
+  padding-top: 138px;
+  margin-bottom: 126px;
+}
+
+
+/* ========================================================================================================================================================================
+   ---------------------------------СЕКЦИЯ "START"------------------------------------------------------------------------------------------------------------------------------
+   ======================================================================================================================================================================== */
+.sct-start {
+  position: relative;
+
+  width: 100%;
+  height: 768px;
+
+  background: url('../img/start/bg-full.png') no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.sct-start::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 768px;
+
+  background: url('../img/start/gradietn.png');
+}
+
+.sct-start__container {
+  position: relative;
+  z-index: 10000;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sct-start__heading {
+  max-width: 614px;
+  text-align: center;
+
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  color: #FFFFFF;
+
+  padding-top: 224px;
+  margin-bottom: 30px;
+}
+
+.sct-start__desc {
+  max-width: 456px;
+  text-align: center;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
+
+  margin-bottom: 50px;
+}
+
+.sct-start__box {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 256px;
+}
+
+.sct-start__box__btn:not(:last-child) {
+  margin-right: 32px;
+}
+
+
+/* ========================================================================================================================================================================
+   ---------------------------------FOOTER------------------------------------------------------------------------------------------------------------------------------
+   ======================================================================================================================================================================== */
+.footer {
+  width: 100%;
+  height: 192px;
+
+  background: #000000;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 100%;
+}
+
+.footer__top {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  height: 72px;
+
+  margin-top: 41px;
+}
+
+.footer__top__left {
+  height: 72px;
+
+  margin-right: 162px;
+}
+
+.footer__top__left__address {
+  max-width: 211px;
+
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.footer__top__center {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+
+  height: 72px;
+
+  margin-right: 212px;
+}
+
+.footer__top__center__link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+}
+
+.footer__top__center__link:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer__top__rigth {
+  height: 72px;
+}
+
+.footer__top__rigth__list {
+  display: flex;
+  align-items: flex-start;
+
+  height: 72px;
+}
+
+.footer__top__rigth__list__item:not(:last-child) {
+  margin-right: 32px;
+}
+
+.footer__bottom {
+  margin-bottom: 21px;
+}
+
+.footer__bottom__privacy {
+  font-weight: 100;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, .6);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

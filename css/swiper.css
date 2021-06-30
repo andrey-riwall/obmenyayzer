@@ -88,8 +88,8 @@ html, body {
 }
 
 .swiper-button-prev {
-  left: 395px;
-  top: 600px;
+  left: 20.79%;
+  top: 50%;
 }
 
 .swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after {
@@ -116,8 +116,8 @@ html, body {
 }
 
 .swiper-button-next {
-  left: 1482px;
-  top: 600px;
+  left: 77.7999%;
+  top: 50%;
 }
 
 .swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after {

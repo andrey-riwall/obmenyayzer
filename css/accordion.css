@@ -1,0 +1,81 @@
+#accordion {
+  padding-bottom: 129px;
+}
+
+#accordion h3 {
+  position: relative;
+
+  width: 1088px;
+
+  padding: 0;
+  padding: 22px 0px 22px 0px;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #000000;
+
+  border: none;
+  border-top: 2px solid #9E9DFF;
+  border-radius: 0px;
+  background: transparent;
+}
+
+#accordion h3.ui-state-active {
+  padding-bottom: 23px;
+}
+
+#accordion h3 span {
+  display: none;
+}
+
+#accordion h3::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 30%;
+  width: 30px;
+  height: 30px;
+  background: #9E9DFF;
+  border-radius: 50%;
+}
+
+#accordion h3::after {
+  content: '';
+  position: absolute;
+  right: 6px;
+  top: 38%;
+  width: 18px;
+  height: 18px;
+  background: url('../img/faq/plus.png') no-repeat;
+  background-position: center center;
+  transition: .5s ease;
+}
+
+
+
+#accordion h3.ui-state-active::after {
+  transform: rotate(45deg);
+}
+
+#accordion div {
+  overflow: hidden;
+
+  max-height: 48px;
+  height: 48px;
+
+  border: none;
+
+  padding: 0;
+
+  box-sizing: content-box;
+
+  background: transparent;
+}
+
+#accordion div p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #626262;
+}
