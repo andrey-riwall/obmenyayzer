@@ -17,8 +17,10 @@
 
 .sct-preference__heading {
   position: absolute;
-  top: 450px;
-  left: 357px;
+  top: 345px;
+  left: 27%;
+
+  font-size: 35px;
 
   max-width: 480px;
 }
