@@ -5,10 +5,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Обменяйзер</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/preference.css">
-  <script src="js/app.js"></script>
+  <link rel="stylesheet" href="css/swipper.css">
+
+  <script defer src="js/app.js"></script>
 </head>
 <body>
 
@@ -113,6 +117,10 @@
 
       <div class="container sct-preference__container">
 
+        <h2 class="sct-preference__heading heading">
+          Почему обмен лучше покупки новой игры?
+        </h2>
+
         <div class="sct-preference__wheel">
           <div class="sct-preference__wheel__wheel-inner">
             <div class="sct-preference__wheel__wheel-inner__content">
@@ -134,9 +142,9 @@
         </div>
 
 
-        <div class="sct-preference__wheel">
+        <div id="wheel2" class="sct-preference__wheel">
           <div class="sct-preference__wheel__wheel-inner">
-            <div class="sct-preference__wheel__wheel-inner__content">
+            <div  class="sct-preference__wheel__wheel-inner__content">
 
               <svg class="sct-preference__wheel__wheel-inner__content__svg" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="28" cy="28" r="26.5" stroke="#6D6CE9" stroke-width="3"/>
@@ -157,9 +165,9 @@
         </div>
 
 
-        <div class="sct-preference__wheel">
+        <div id="wheel3" class="sct-preference__wheel">
           <div class="sct-preference__wheel__wheel-inner">
-            <div class="sct-preference__wheel__wheel-inner__content">
+            <div  class="sct-preference__wheel__wheel-inner__content">
 
               <svg class="sct-preference__wheel__wheel-inner__content__svg" width="60" height="56" viewBox="0 0 60 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0.00102287 36.0628L2.06343 34.0003L22 53.9375L19.9376 56L0.00102287 36.0628Z" fill="#6D6CE9"/>
@@ -182,9 +190,9 @@
         </div>
 
 
-        <div class="sct-preference__wheel">
+        <div id="wheel4" class="sct-preference__wheel">
           <div class="sct-preference__wheel__wheel-inner">
-            <div class="sct-preference__wheel__wheel-inner__content">
+            <div  class="sct-preference__wheel__wheel-inner__content">
 
               <svg class="sct-preference__wheel__wheel-inner__content__svg" width="70" height="56" viewBox="0 0 70 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M26 37.5L14 54.5M14 54.5L2 37.5M14 54.5V14.75C14 11.2359 15.3792 7.86569 17.8342 5.38083C20.2893 2.89598 23.619 1.5 27.0909 1.5H41" stroke="#6D6CE9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
@@ -204,9 +212,9 @@
         </div>
 
 
-        <div class="sct-preference__wheel">
+        <div id="wheel5" class="sct-preference__wheel">
           <div class="sct-preference__wheel__wheel-inner">
-            <div class="sct-preference__wheel__wheel-inner__content">
+            <div  class="sct-preference__wheel__wheel-inner__content">
 
               <svg class="sct-preference__wheel__wheel-inner__content__svg" width="26" height="56" viewBox="0 0 26 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M22.5563 39.1554C22.5563 36.957 21.8675 35.1646 20.4901 33.7783C19.1126 32.3721 16.6829 31.0451 13.2009 29.7973C8.87712 28.3912 5.84474 26.7275 4.10375 24.8064C2.36277 22.8654 1.49227 20.36 1.49227 17.2902C1.49227 14.0619 2.44886 11.4476 4.36203 9.44722C6.2752 7.42706 8.87712 6.27834 12.1678 6.00106V0H15.0949V6.00106C18.4621 6.31795 21.064 7.62511 22.9007 9.92255C24.7564 12.22 25.6843 15.3393 25.6843 19.2806H22.2693C22.2693 16.1712 21.4849 13.7054 19.9161 11.8833C18.3664 10.0414 16.2428 9.12042 13.5453 9.12042C10.8286 9.12042 8.70493 9.86313 7.17439 11.3485C5.66299 12.8141 4.90728 14.7749 4.90728 17.2308C4.90728 19.6074 5.60559 21.4691 7.00221 22.8159C8.39882 24.1429 10.7712 25.4005 14.1192 26.5889C17.4864 27.7574 19.9257 28.8863 21.4371 29.9756C22.9676 31.0451 24.106 32.3225 24.8521 33.808C25.6174 35.2736 26 37.0363 26 39.096C26 42.3441 25.0147 44.9683 23.0442 46.9687C21.0927 48.9492 18.4047 50.0782 14.9801 50.3554V56H12.0817V50.3851C8.2362 50.1277 5.26122 48.8799 3.15673 46.6419C1.05224 44.3841 0 41.3043 0 37.4027H3.44371C3.44371 40.4923 4.3142 42.9185 6.05519 44.6812C7.79617 46.424 10.2259 47.2955 13.3444 47.2955C16.0611 47.2955 18.2708 46.5429 19.9735 45.0377C21.6954 43.5325 22.5563 41.5717 22.5563 39.1554Z" fill="#6D6CE9"/>
@@ -298,6 +306,79 @@
           Какие игры у нас есть?
         </h2>
 
+
+        <!-- slider -->
+        <div class="swiper-container mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="swiper-slide__content">
+
+                <img src="img/storage/1slide.png" alt="" class="swiper-slide__content__img">
+
+                <h3 class="swiper-slide__content__heading">
+                  Biomutant <br> Стандартное издание
+                </h3>
+
+                <p class="swiper-slide__content__desc">
+                  Исследуйте мир постапокалиптической RPG-сказки с открытым миром и определите его судьбу...
+                </p>
+
+                <a href="#" class="swiper-slide__content__more">
+                  Читать полностью
+                </a>
+
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="swiper-slide__content">
+
+                <img src="img/storage/2slide.png" alt="" class="swiper-slide__content__img">
+
+                <h3 class="swiper-slide__content__heading">
+                  Resident Evil Village
+                </h3>
+
+                <p class="swiper-slide__content__desc" style="padding-bottom: 24px;">
+                  Проходит около семи лет после событий в игре Resident Evil 7. После визита Криса Редфилда неожиданно начинается новый кошмар...
+                </p>
+
+                <a href="#" class="swiper-slide__content__more">
+                  Читать полностью
+                </a>
+
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="swiper-slide__content">
+
+                <img src="img/storage/3slide.png" alt="" class="swiper-slide__content__img">
+
+                <h3 class="swiper-slide__content__heading">
+                  Diablo 3
+                </h3>
+
+                <p class="swiper-slide__content__desc" style="padding-bottom: 0px;">
+                  Много лет минуло с тех пор, как в Санктуарии бесчинствовали орды нежити. В поисках знаний, которые помогут одолеть новые воплощения зла...
+                </p>
+
+                <a href="#" class="swiper-slide__content__more">
+                  Читать полностью
+                </a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+
+        <a href="#" class="sct-storage__link btn btn_border">
+          Смотреть все
+        </a>
+
       </div>
 
     </section>
@@ -317,6 +398,28 @@
     </div>
 
   </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      slidesPerGroup: 3,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 
 </body>
 </html>
